@@ -1,6 +1,7 @@
 package com.remi.footballManager.controller;
 
 
+import com.remi.footballManager.core.competition.SeasonResult;
 import com.remi.footballManager.scrapper.SeasonResultScrapper;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -17,6 +18,7 @@ public class SeasonResultController {
 
     @GetMapping
     public ResponseEntity<?> get(){
-        return ResponseEntity.ok(scrapper.extractSeasonResult("https://fbref.com/en/comps/13/Ligue-1-Stats"));
+        SeasonResult seasonResult = scrapper.extractSeasonResult("https://fbref.com/en/comps/13/Ligue-1-Stats");
+        return ResponseEntity.ok().body(seasonResult);
     }
 }

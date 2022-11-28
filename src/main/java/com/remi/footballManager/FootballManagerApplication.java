@@ -17,6 +17,7 @@ public class FootballManagerApplication {
 	public Docket postsApi() {
 		return new Docket(DocumentationType.SWAGGER_2).groupName("footballManager");
 	}
+
 	public static void main(String[] args) {
 		SpringApplication.run(FootballManagerApplication.class, args);
 	}

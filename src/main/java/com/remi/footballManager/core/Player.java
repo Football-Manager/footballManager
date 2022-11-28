@@ -1,8 +1,5 @@
 package com.remi.footballManager.core;
 
-import lombok.Builder;
-
-@Builder
 public class Player {
     private String firstName;
     private String lastName;
