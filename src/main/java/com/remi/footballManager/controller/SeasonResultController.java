@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class SeasonResultController {
     private final SeasonResultScrapper scrapper;
     public SeasonResultController(SeasonResultScrapper scrapper){
-        this.scrapper = scrapper;  
+        this.scrapper = scrapper;
     }
 
     @GetMapping
