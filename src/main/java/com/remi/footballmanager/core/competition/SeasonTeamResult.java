@@ -1,7 +1,7 @@
-package com.remi.footballManager.core.competition;
+package com.remi.footballmanager.core.competition;
 
-import com.remi.footballManager.core.Player;
-import com.remi.footballManager.core.Team;
+import com.remi.footballmanager.core.Player;
+import com.remi.footballmanager.core.Team;
 
 public class SeasonTeamResult {
     Team team;

@@ -1,12 +1,13 @@
-package com.remi.footballManager.core.competition;
+package com.remi.footballmanager.core.competition;
 
-import com.remi.footballManager.core.Player;
-import com.remi.footballManager.core.Team;
+import com.remi.footballmanager.core.Player;
+import com.remi.footballmanager.core.Team;
 import org.apache.commons.lang3.builder.EqualsBuilder;
 import org.apache.commons.lang3.builder.HashCodeBuilder;
 import org.apache.commons.lang3.builder.ToStringBuilder;
 
 import java.util.List;
+
 public class Competition {
     private String name;
     private String season;

@@ -1,4 +1,4 @@
-package com.remi.footballManager.scrapper.exception;
+package com.remi.footballmanager.scrapper.exception;
 
 public class UnexpectedScrappingException extends RuntimeException {
     public UnexpectedScrappingException(){}
