@@ -47,6 +47,7 @@ public class SeasonResultScrapper {
     private void fullFillSeasonTeamResult(SeasonTeamResult seasonTeamResult, Element element){
         switch (element.attr("data-stat")) {
             case "games" -> seasonTeamResult.setMatchPlayed(getIntegerFromElement(element));
+
             default -> {}
         }
     }
