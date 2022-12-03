@@ -9,11 +9,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("/SeasonResult")
+@RequestMapping("/SeasonResult" )
 public class SeasonResultController {
     private final SeasonResultScrapper scrapper;
     public SeasonResultController(SeasonResultScrapper scrapper){
-        this.scrapper = scrapper;
+        this.scrapper = scrapper ;
     }
 
     @GetMapping
