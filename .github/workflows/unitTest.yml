@@ -1,11 +1,14 @@
-name: Java CI with Maven
+name: Unit test
 
 on:
   push:
     branches: [ "main" ]
   pull_request:
     branches: [ "main" ]
-
+  push:
+    branches: [ "develop" ]
+  pull_request:
+    branches: [ "develop" ]
 jobs:
   build:
 
