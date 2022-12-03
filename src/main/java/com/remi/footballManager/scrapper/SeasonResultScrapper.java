@@ -1,5 +1,6 @@
 package com.remi.footballManager.scrapper;
 
+import com.remi.footballManager.core.Team;
 import com.remi.footballManager.core.competition.SeasonResult;
 import com.remi.footballManager.core.competition.SeasonTeamResult;
 import com.remi.footballManager.scrapper.exception.UnexpectedScrappingException;
@@ -46,13 +47,43 @@ public class SeasonResultScrapper {
 
     private void fullFillSeasonTeamResult(SeasonTeamResult seasonTeamResult, Element element){
         switch (element.attr("data-stat")) {
+            case "rank" -> {}
             case "games" -> seasonTeamResult.setMatchPlayed(getIntegerFromElement(element));
-
-            default -> {}
+            case "team" -> {
+                Team team = new Team();
+                team.setName(getStringFromElement(element));
+                seasonTeamResult.setTeam(team);
+            }
+            case "wins" -> seasonTeamResult.setWin(getIntegerFromElement(element));
+            case "ties" -> seasonTeamResult.setDraw(getIntegerFromElement(element));
+            case "losses" -> seasonTeamResult.setLost(getIntegerFromElement(element));
+            case "goals_for" -> seasonTeamResult.setGoalFor(getIntegerFromElement(element));
+            case "goals_against" -> seasonTeamResult.setGoalAgainst(getIntegerFromElement(element));
+            case "goal_diff" -> seasonTeamResult.setGoalDifference(getIntegerFromElement(element));
+            case "points" -> seasonTeamResult.setPoints(getIntegerFromElement(element));
+            case "points_avg" -> {}
+            case "xg_for" -> {}
+            case "xg_against" -> {}
+            case "xg_diff" -> {}
+            case "xg_diff_per90" -> {}
+            case "last_5" -> {}
+            case "attendance_per_g" -> {}
+            case "top_team_scorers" -> {
+                System.out.println(element.childNode(0));
+            }
+            case "top_keeper" -> {}
+            case "notes" -> {}
+            default -> {
+                System.out.println(element.attr("data-stat"));
+            }
         }
     }
 
     private Integer getIntegerFromElement(Element element){
         return Integer.valueOf(element.childNode(0).toString());
+    }
+
+    private String getStringFromElement(Element element) {
+        return element.childNode(0).toString();
     }
 }
