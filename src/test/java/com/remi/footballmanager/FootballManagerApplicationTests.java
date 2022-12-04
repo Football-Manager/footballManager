@@ -1,4 +1,4 @@
-package com.remi.footballManager;
+package com.remi.footballmanager;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

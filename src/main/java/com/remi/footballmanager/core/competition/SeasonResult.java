@@ -1,4 +1,4 @@
-package com.remi.footballManager.core.competition;
+package com.remi.footballmanager.core.competition;
 
 import org.apache.commons.lang3.builder.EqualsBuilder;
 import org.apache.commons.lang3.builder.HashCodeBuilder;

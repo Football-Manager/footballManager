@@ -1,4 +1,4 @@
-package com.remi.footballManager.core;
+package com.remi.footballmanager.core;
 
 import java.util.List;
 

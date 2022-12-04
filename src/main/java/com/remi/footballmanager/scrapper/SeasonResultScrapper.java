@@ -1,23 +1,17 @@
-package com.remi.footballManager.scrapper;
+package com.remi.footballmanager.scrapper;
 
-import com.remi.footballManager.core.Team;
-import com.remi.footballManager.core.competition.SeasonResult;
-import com.remi.footballManager.core.competition.SeasonTeamResult;
-import com.remi.footballManager.scrapper.exception.UnexpectedScrappingException;
-import io.swagger.models.auth.In;
+import com.remi.footballmanager.core.Team;
+import com.remi.footballmanager.core.competition.SeasonResult;
+import com.remi.footballmanager.core.competition.SeasonTeamResult;
+import com.remi.footballmanager.scrapper.exception.UnexpectedScrappingException;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 import org.springframework.stereotype.Component;
 
-import javax.xml.xpath.XPath;
 import java.io.IOException;
-import java.util.Map;
-import java.util.Objects;
 import java.util.Optional;
-import java.util.function.Function;
-import java.util.stream.Collectors;
 
 @Component
 public class SeasonResultScrapper {

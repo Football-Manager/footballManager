@@ -1,8 +1,8 @@
-package com.remi.footballManager.controller;
+package com.remi.footballmanager.controller;
 
 
-import com.remi.footballManager.core.competition.SeasonResult;
-import com.remi.footballManager.scrapper.SeasonResultScrapper;
+import com.remi.footballmanager.core.competition.SeasonResult;
+import com.remi.footballmanager.scrapper.SeasonResultScrapper;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;

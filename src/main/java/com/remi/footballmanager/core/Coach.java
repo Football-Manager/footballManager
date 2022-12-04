@@ -1,5 +1,4 @@
-package com.remi.footballManager.core;
-
+package com.remi.footballmanager.core;
 
 public class Coach {
     private String firstName;

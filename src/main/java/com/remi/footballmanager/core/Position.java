@@ -1,4 +1,4 @@
-package com.remi.footballManager.core;
+package com.remi.footballmanager.core;
 
 public enum Position {
     GoalKeeper,
